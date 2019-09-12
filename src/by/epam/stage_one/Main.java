@@ -1,6 +1,6 @@
 package by.epam.stage_one;
 
-import by.epam.stage_one.sortings.MergeSort;
+import by.epam.stage_one.sortings.SelectionSort;
 import by.epam.stage_one.utils.CreateRandomIntArray;
 
 public class Main {
@@ -11,7 +11,7 @@ public class Main {
         }
         System.out.println();
 
-        arr = MergeSort.sortMerge(arr);
+        arr = SelectionSort.selectionSort(arr);
         for (int i: arr) {
             System.out.print(i + ", ");
         }
