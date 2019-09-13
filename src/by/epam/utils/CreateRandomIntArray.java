@@ -1,4 +1,4 @@
-package by.epam.stage_one.utils;
+package by.epam.utils;
 
 import java.util.Random;
 

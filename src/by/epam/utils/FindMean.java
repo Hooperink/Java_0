@@ -1,4 +1,4 @@
-package by.epam.stage_one.utils;
+package by.epam.utils;
 
 public class FindMean {
 

@@ -1,4 +1,4 @@
-package by.epam.stage_one.utils;
+package by.epam.utils;
 
 public class FindMinInArray {
     public static int findMin(int ... arr) throws Exception{
