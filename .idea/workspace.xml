@@ -2,19 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46a4025d-e9ac-42e2-bb0e-359e1f7c0db2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/by/epam/stage_two/file_handler/IntArrayGet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/epam/stage_two/numbers.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/epam/stage_two/validation/IntValidationResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/epam/stage_two/validation/Validation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/epam/utils/GetArrayFromArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/by/epam/task_one/stage_three/IntSummaryStatisticsArrayHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_0_epam/by/epam/stage_one/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_0_epam/by/epam/stage_one/utils/CreateRandomIntArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/epam/stage_one/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/epam/stage_one/utils/CreateRandomIntArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/utils/CreateRandomIntArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/epam/stage_one/utils/FindMaxInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/utils/FindMaxInArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/epam/stage_one/utils/FindMean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/utils/FindMean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/epam/stage_one/utils/FindMinInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/utils/FindMinInArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_0_epam/by/epam/stage_one/sortings/MergeSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/epam/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/epam/stage_one/sortings/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/stage_one/sortings/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/epam/stage_one/sortings/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/stage_one/sortings/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/epam/stage_one/sortings/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/stage_one/sortings/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/epam/stage_two/file_handler/IntArrayGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/stage_two/file_handler/IntArrayGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/epam/stage_two/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/stage_two/numbers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/epam/stage_two/validation/IntValidationResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/stage_two/validation/IntValidationResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/epam/stage_two/validation/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/stage_two/validation/Validation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/epam/utils/CreateRandomIntArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/utils/CreateRandomIntArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/epam/utils/FindMaxInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/utils/FindMaxInArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/epam/utils/FindMean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/utils/FindMean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/epam/utils/FindMinInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/utils/FindMinInArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/epam/utils/GetArrayFromArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/utils/GetArrayFromArrayList.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,39 +31,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="119" selection-start-line="10" selection-start-column="119" selection-end-line="10" selection-end-column="119" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/by/epam/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/stage_two/numbers.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/epam/stage_two/validation/Validation.java">
+        <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/stage_three/IntSummaryStatisticsArrayHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="544">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/epam/stage_two/file_handler/IntArrayGet.java">
+        <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/stage_two/validation/Validation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
+            <state relative-caret-position="170">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/stage_two/file_handler/IntArrayGet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
               <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#339#348#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/by/epam/utils/GetArrayFromArrayList.java">
+        <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/utils/GetArrayFromArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
@@ -98,6 +121,10 @@
         <option value="$PROJECT_DIR$/src/by/epam/stage_two/validation/Validation.java" />
         <option value="$PROJECT_DIR$/src/by/epam/utils/GetArrayFromArrayList.java" />
         <option value="$PROJECT_DIR$/src/by/epam/Main.java" />
+        <option value="$PROJECT_DIR$/src/by/epam/task_one/stage_three/IntSummaryStatisticsFindMax.java" />
+        <option value="$PROJECT_DIR$/src/by/epam/task_one/stage_three/IntSummaryStatisticsArrayHandler.java" />
+        <option value="$PROJECT_DIR$/src/by/epam/task_one/Main.java" />
+        <option value="$PROJECT_DIR$/src/by/epam/task_one/stage_two/numbers.txt" />
       </list>
     </option>
   </component>
@@ -129,44 +156,21 @@
               <item name="java_0_epam" type="b2602c69:ProjectViewProjectNode" />
               <item name="java_0_epam" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="epam" type="462c0819:PsiDirectoryNode" />
+              <item name="task_one" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java_0_epam" type="b2602c69:ProjectViewProjectNode" />
               <item name="java_0_epam" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="epam" type="462c0819:PsiDirectoryNode" />
-              <item name="sortings" type="462c0819:PsiDirectoryNode" />
+              <item name="task_one" type="462c0819:PsiDirectoryNode" />
+              <item name="stage_three" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java_0_epam" type="b2602c69:ProjectViewProjectNode" />
               <item name="java_0_epam" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="epam" type="462c0819:PsiDirectoryNode" />
+              <item name="task_one" type="462c0819:PsiDirectoryNode" />
               <item name="stage_two" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java_0_epam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java_0_epam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="epam" type="462c0819:PsiDirectoryNode" />
-              <item name="stage_two" type="462c0819:PsiDirectoryNode" />
-              <item name="file_handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java_0_epam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java_0_epam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="epam" type="462c0819:PsiDirectoryNode" />
-              <item name="stage_two" type="462c0819:PsiDirectoryNode" />
-              <item name="validation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java_0_epam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java_0_epam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="epam" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -190,13 +194,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.epam.Main" />
       <module name="java_0_epam" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="by.epam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.epam.task_one.Main" />
+      <module name="java_0_epam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.epam.task_one.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -219,6 +236,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
@@ -249,14 +267,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568381026495</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create array from file + validation of values from file">
+      <created>1568403810777</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568403810777</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20522387" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20735608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -266,7 +291,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -288,13 +313,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Insertion sort + Selection sort" />
     <MESSAGE value="Find max&#10;Find min&#10;Find mean&#10;creator reforged (not static)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Find max&#10;Find min&#10;Find mean&#10;creator reforged (not static)" />
+    <MESSAGE value="Create array from file + validation of values from file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create array from file + validation of values from file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/by/epam/stage_two/file_handler/IntArrayGet.java</url>
+          <url>file://$PROJECT_DIR$/src/by/epam/task_one/stage_two/file_handler/IntArrayGet.java</url>
           <line>16</line>
           <properties />
           <option name="timeStamp" value="4" />
@@ -303,105 +329,115 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/by/epam/stage_one/sortings/InsertionSort.java">
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/stage_one/sortings/InsertionSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/stage_one/sortings/SelectionSort.java">
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/stage_one/sortings/SelectionSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/stage_one/sortings/MergeSort.java">
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/stage_one/sortings/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/utils/FindMaxInArray.java">
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/utils/FindMaxInArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/utils/FindMinInArray.java">
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/utils/FindMinInArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/utils/Validation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/utils/CreateRandomIntArray.java">
+    <entry file="file://$PROJECT_DIR$/src/by/epam/utils/Validation.java" />
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/utils/CreateRandomIntArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="39" lean-forward="true" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/utils/FindMean.java">
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/utils/FindMean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/stage_two/validation/IntValidationResult.java">
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/stage_two/validation/IntValidationResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/stage_two/numbers.txt">
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/stage_two/validation/Validation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="170">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/stage_two/validation/Validation.java">
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/stage_two/file_handler/IntArrayGet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/stage_two/file_handler/IntArrayGet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
+        <state relative-caret-position="272">
           <caret line="23" column="60" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#339#348#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/utils/GetArrayFromArrayList.java">
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/utils/GetArrayFromArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/stage_three/IntSummaryStatistcsFindMin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/stage_three/IntSummaryStatisticsArrayHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="119" selection-start-line="10" selection-start-column="119" selection-end-line="10" selection-end-column="119" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/stage_two/numbers.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
         </state>
       </provider>
     </entry>

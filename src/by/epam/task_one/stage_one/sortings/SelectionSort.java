@@ -1,4 +1,4 @@
-package by.epam.stage_one.sortings;
+package by.epam.task_one.stage_one.sortings;
 
 public class SelectionSort {
 

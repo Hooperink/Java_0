@@ -1,6 +1,4 @@
-package by.epam.stage_two.validation;
-
-import by.epam.stage_two.validation.IntValidationResult;
+package by.epam.task_one.stage_two.validation;
 
 public class Validation {
 

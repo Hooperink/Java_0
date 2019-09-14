@@ -1,8 +1,8 @@
-package by.epam.stage_two.file_handler;
+package by.epam.task_one.stage_two.file_handler;
 
-import by.epam.stage_two.validation.IntValidationResult;
-import by.epam.stage_two.validation.Validation;
-import by.epam.utils.GetArrayFromArrayList;
+import by.epam.task_one.stage_two.validation.IntValidationResult;
+import by.epam.task_one.stage_two.validation.Validation;
+import by.epam.task_one.utils.GetArrayFromArrayList;
 
 import java.io.BufferedReader;
 import java.io.File;
