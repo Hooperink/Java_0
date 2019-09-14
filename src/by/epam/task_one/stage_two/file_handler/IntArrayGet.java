@@ -26,6 +26,7 @@ public class IntArrayGet {
                     valuesFromString.addAll(result.values);
                 }
             }
+            bufferedReader.close();
         } catch (Exception e){
             e.printStackTrace();
         }
