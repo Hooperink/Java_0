@@ -11,24 +11,33 @@ import java.util.ArrayList;
 
 public class IntArrayGet {
 
-    ArrayList <Integer> valuesFromString = new ArrayList<Integer>();
+    private ArrayList <Integer> valuesFromString = new ArrayList<Integer>();
 
     public int[] getIntFromFile(String path){
         File file = new File(path);
         IntValidationResult result;
         String temp = null;
+        BufferedReader bufferedReader = null;
         try {
             FileReader fileReader = new FileReader(file);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            bufferedReader = new BufferedReader(fileReader);
             while ((temp = bufferedReader.readLine())!= null){
                 result = Validation.intValidationResult(temp);
                 if (result.isValid){
                     valuesFromString.addAll(result.values);
                 }
             }
-            bufferedReader.close();
+
         } catch (Exception e){
             e.printStackTrace();
+        } finally {
+            try {
+                if (bufferedReader != null){
+                    bufferedReader.close();
+                }
+            } catch (Exception e){
+                e.printStackTrace();
+            }
         }
         return GetArrayFromArrayList.getArray(valuesFromString);
     }
