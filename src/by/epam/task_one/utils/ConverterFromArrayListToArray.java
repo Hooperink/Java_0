@@ -2,10 +2,10 @@ package by.epam.task_one.utils;
 
 import java.util.ArrayList;
 
-public class GetArrayFromArrayList {
+public class ConverterFromArrayListToArray {
 
-    public static int[] getArray(ArrayList <Integer> arrayList){
-        int [] array  = new int[arrayList.size()];
+    public static double[] getArray(ArrayList <Double> arrayList){
+        double [] array  = new double [arrayList.size()];
         for (int i = 0; i < arrayList.size(); i++) {
             array[i] = arrayList.get(i);
         }
