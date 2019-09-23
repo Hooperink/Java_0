@@ -1,7 +1,15 @@
-package by.epam.task_one.stage_one.sortings;
+package by.epam.task_one.sorter;
 
 public class ArraySorter {
     public static int[] insertionSort(int ... array){
+
+        if (array == null){
+            return null;
+        }
+
+        if (array.length < 2){
+            return array;
+        }
 
         int current;
         int itemToCheck;
@@ -21,6 +29,14 @@ public class ArraySorter {
 
     public static int[] selectionSort(int ... array){
 
+        if (array == null){
+            return null;
+        }
+
+        if (array.length < 2){
+            return array;
+        }
+
         for (int i = 0; i < array.length; i++) {
             int min = array[i];
             int position = i;
@@ -39,7 +55,7 @@ public class ArraySorter {
     }
 
 
-    public int[] sortMerge(int ... array){
+    public static int[] sortMerge(int ... array){
         if (array == null){
             return null;
         }

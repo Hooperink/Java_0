@@ -1,13 +1,13 @@
-package by.epam.task_one.utils;
+package by.epam.task_one.array_utils;
+
+import by.epam.task_one.exception.ArrayIsNullException;
 
 public class ArraySummaryFinder {
 
-    //TODO: Exception made yourself
-
-    public  int findMax(int ... arr) throws Exception{
+    public  int findMax(int ... arr) throws ArrayIsNullException{
 
         if (arr == null){
-            throw new Exception("Array is null");
+            throw new ArrayIsNullException("Array is null");
         }
         if (arr.length < 2) {
             return arr[0];
@@ -24,12 +24,11 @@ public class ArraySummaryFinder {
         return max;
     }
 
-    //TODO: Exception made yourself
 
-    public int findAverage(int ... arr) throws Exception{
+    public int findAverage(int ... arr) throws ArrayIsNullException {
 
         if (arr == null){
-            throw new Exception("Array is null");
+            throw new ArrayIsNullException("Array is null");
         }
         if (arr.length < 2) {
             return arr[0];
@@ -44,12 +43,11 @@ public class ArraySummaryFinder {
         return average;
     }
 
-    //TODO: Exception made yourself
 
-    public int findMin(int ... arr) throws Exception{
+    public int findMin(int ... arr) throws ArrayIsNullException{
 
         if (arr == null){
-            throw new Exception("Array is null");
+            throw new ArrayIsNullException("Array is null");
         }
         if (arr.length < 2) {
             return arr[0];
