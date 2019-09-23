@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class ConverterFromArrayListToArray {
 
     public static double[] getArray(ArrayList <Double> arrayList) throws ArrayIsNullException {
-        if (arrayList == null){
+        if (arrayList == null) {
             throw new ArrayIsNullException("Array is empty");
         }
         double [] array  = new double [arrayList.size()];

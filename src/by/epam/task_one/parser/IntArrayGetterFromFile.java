@@ -23,21 +23,21 @@ public class IntArrayGetterFromFile {
         try {
             FileReader fileReader = new FileReader(file);
             bufferedReader = new BufferedReader(fileReader);
-            while ((temp = bufferedReader.readLine())!= null){
-               if (StringValidator.isValidString(temp)){
+            while ((temp = bufferedReader.readLine())!= null) {
+               if (StringValidator.isValidString(temp)) {
                    Stream<String> stream = Pattern.compile(" ").splitAsStream(temp);
                    stream.forEach(x -> valuesFromString.add(Double.valueOf(x)));
                }
             }
 
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         } finally {
             try {
-                if (bufferedReader != null){
+                if (bufferedReader != null) {
                     bufferedReader.close();
                 }
-            } catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }

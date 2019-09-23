@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46a4025d-e9ac-42e2-bb0e-359e1f7c0db2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/by/epam/task_one/array_utils/ArrayStreamSummaryFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/epam/task_one/exception/ArrayIsNullException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/epam/task_one/validator/StringValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/by/epam/task_one/array_utils/ArrayStreamSummaryFinderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/by/epam/task_one/array_utils/ArraySummaryFinderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/by/epam/task_one/array_utils/ConverterFromArrayListToArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/by/epam/task_one/sorter/ArraySorterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/by/epam/task_one/validator/StringValidatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_0_epam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java_0_epam.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resource/numbers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/epam/task_one/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/epam/task_one/stage_one/sortings/ArraySorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/sorter/ArraySorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/epam/task_one/stage_three/IntSummaryStatisticsArrayHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/epam/task_one/stage_two/file_handler/IntArrayGetterFromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/parser/IntArrayGetterFromFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/epam/task_one/stage_two/validation/Validator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/epam/task_one/stage_two/validation/ValidatorResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/epam/task_one/utils/ArraySummaryFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/array_utils/ArraySummaryFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/epam/task_one/utils/ConverterFromArrayListToArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/array_utils/ConverterFromArrayListToArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/epam/task_one/array_utils/ArrayStreamSummaryFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/epam/task_one/array_utils/ArrayStreamSummaryFinder.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,34 +16,41 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/sorter/ArraySorter.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test/by/epam/task_one/sorter/ArraySorterTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="13" column="72" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/validator/StringValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/array_utils/ArrayStreamSummaryFinder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/sorter/ArraySorter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -125,7 +115,6 @@
         <option value="$PROJECT_DIR$/src/by/epam/task_one/array_utils/ArrayStreamSummaryFinderTest.groovy" />
         <option value="$PROJECT_DIR$/test/by/epam/task_one/s.java" />
         <option value="$PROJECT_DIR$/src/by/epam/task_one/creator/RandomArrayCreator.java" />
-        <option value="$PROJECT_DIR$/src/by/epam/task_one/array_utils/ArrayStreamSummaryFinder.java" />
         <option value="$PROJECT_DIR$/src/by/epam/task_one/parser/StringToDoubleListParser.java" />
         <option value="$PROJECT_DIR$/resource/numbers.txt" />
         <option value="$PROJECT_DIR$/test/by/epam/task_one/validator/StringValidatorTest.java" />
@@ -138,6 +127,7 @@
         <option value="$PROJECT_DIR$/src/by/epam/task_one/Main.java" />
         <option value="$PROJECT_DIR$/src/by/epam/task_one/sorter/ArraySorter.java" />
         <option value="$PROJECT_DIR$/test/by/epam/task_one/sorter/ArraySorterTest.java" />
+        <option value="$PROJECT_DIR$/src/by/epam/task_one/array_utils/ArrayStreamSummaryFinder.java" />
       </list>
     </option>
   </component>
@@ -187,7 +177,7 @@
               <item name="java_0_epam" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="task_one" type="462c0819:PsiDirectoryNode" />
-              <item name="sorter" type="462c0819:PsiDirectoryNode" />
+              <item name="validator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java_0_epam" type="b2602c69:ProjectViewProjectNode" />
@@ -199,6 +189,20 @@
               <item name="java_0_epam" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="task_one" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_0_epam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_0_epam" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="task_one" type="462c0819:PsiDirectoryNode" />
+              <item name="array_utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_0_epam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_0_epam" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="task_one" type="462c0819:PsiDirectoryNode" />
+              <item name="sorter" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -411,16 +415,17 @@
       <option name="project" value="LOCAL" />
       <updated>1568822482932</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactoring + testNG test">
+      <created>1569242131116</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1569242131116</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ArrayStreamSummaryFinderTest_shouldFindMin_(1) - 2019.09.19 at 20h 38m 34s.xml">
-      <configuration name="ArrayStreamSummaryFinderTest.shouldFindMin (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="StringValidatorTest_testIsValidString - 2019.09.23 at 14h 52m 13s.xml">
-      <configuration name="StringValidatorTest.testIsValidString" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="StringValidatorTest_testIsValidString - 2019.09.23 at 14h 52m 27s.xml">
       <configuration name="StringValidatorTest.testIsValidString" configurationId="TestNG" />
     </history-entry>
@@ -445,9 +450,15 @@
     <history-entry file="ConverterFromArrayListToArrayTest_getArrayShouldThrowExceptionWhenNullIsGiven - 2019.09.23 at 15h 12m 44s.xml">
       <configuration name="ConverterFromArrayListToArrayTest.getArrayShouldThrowExceptionWhenNullIsGiven" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="ArraySorterTest_testInsertionSort - 2019.09.23 at 15h 31m 06s.xml">
+      <configuration name="ArraySorterTest.testInsertionSort" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ArraySorterTest - 2019.09.23 at 15h 34m 00s.xml">
+      <configuration name="ArraySorterTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20948827" />
@@ -486,7 +497,8 @@
     <MESSAGE value="Find min, max and average with intSummaryStatistics" />
     <MESSAGE value="add bufferedReader.close()" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value="refactoring + testNG test" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring + testNG test" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/by/epam/utils/Validation.java" />
@@ -620,27 +632,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/validator/StringValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/by/epam/task_one/validator/StringValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="102" selection-start-line="11" selection-start-column="102" selection-end-line="11" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/array_utils/ArrayStreamSummaryFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -671,13 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/by/epam/task_one/array_utils/ArrayStreamSummaryFinderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -705,17 +693,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/sorter/ArraySorter.java">
+    <entry file="file://$PROJECT_DIR$/test/by/epam/task_one/sorter/ArraySorterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="629">
+          <caret line="45" column="43" lean-forward="true" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/by/epam/task_one/sorter/ArraySorterTest.java">
+    <entry file="file://$PROJECT_DIR$/test/by/epam/task_one/array_utils/ArrayStreamSummaryFinderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="72" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
+        <state relative-caret-position="289">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/sorter/ArraySorter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/validator/StringValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/epam/task_one/array_utils/ArrayStreamSummaryFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,13 +1,13 @@
 package by.epam.task_one.sorter;
 
 public class ArraySorter {
-    public static int[] insertionSort(int ... array){
+    public static int[] insertionSort(int ... array) {
 
-        if (array == null){
+        if (array == null) {
             return null;
         }
 
-        if (array.length < 2){
+        if (array.length < 2) {
             return array;
         }
 
@@ -17,7 +17,7 @@ public class ArraySorter {
         for (int i = 1; i < array.length; i++) {
             current = array[i];
             itemToCheck = i - 1;
-            while ((itemToCheck >= 0) && (current < array[itemToCheck])){
+            while ((itemToCheck >= 0) && (current < array[itemToCheck])) {
                 array[itemToCheck + 1] = array[itemToCheck];
                 itemToCheck--;
             }
@@ -27,13 +27,13 @@ public class ArraySorter {
     }
 
 
-    public static int[] selectionSort(int ... array){
+    public static int[] selectionSort(int ... array) {
 
-        if (array == null){
+        if (array == null) {
             return null;
         }
 
-        if (array.length < 2){
+        if (array.length < 2) {
             return array;
         }
 
@@ -55,8 +55,8 @@ public class ArraySorter {
     }
 
 
-    public static int[] sortMerge(int ... array){
-        if (array == null){
+    public static int[] sortMerge(int ... array) {
+        if (array == null) {
             return null;
         }
 
@@ -77,7 +77,7 @@ public class ArraySorter {
     }
 
 
-    private static int[] merge(int left[], int right[]){
+    private static int[] merge(int left[], int right[]) {
 
         int mergedArray[] = new int [left.length + right.length];
         int leftPosition = 0;
@@ -87,7 +87,7 @@ public class ArraySorter {
             if (leftPosition == left.length){
                 mergedArray[i] = right[rightPosition];
                 rightPosition++;
-            } else if (rightPosition == right.length){
+            } else if (rightPosition == right.length) {
                 mergedArray[i] = left[leftPosition];
                 leftPosition++;
             } else if (left[leftPosition] < right[rightPosition]) {

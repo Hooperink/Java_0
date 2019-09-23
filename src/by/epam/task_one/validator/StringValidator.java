@@ -7,7 +7,7 @@ public class StringValidator {
 
     public static boolean isValidString(String stringFromFile) {
 
-        if (stringFromFile == null){
+        if (stringFromFile == null) {
             return false;
         }
 
@@ -15,7 +15,7 @@ public class StringValidator {
         String []split = stringFromFile.split(" ");
         Pattern pattern = Pattern.compile("(\\d+\\.\\d+)|(\\b\\d+\\b)");
 
-        for (int i = 0; i < split.length; i++){
+        for (int i = 0; i < split.length; i++) {
             matcher = pattern.matcher(split[i].trim());
             if (!matcher.matches()){
                return false;

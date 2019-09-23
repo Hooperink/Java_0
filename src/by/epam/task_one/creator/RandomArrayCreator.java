@@ -6,7 +6,7 @@ public class RandomArrayCreator {
 
     public final static int RANGE = 10;
 
-    public int[] createArray(int size){
+    public int[] createArray(int size) {
 
         Random random = new Random();
         int array[] = new int[size];

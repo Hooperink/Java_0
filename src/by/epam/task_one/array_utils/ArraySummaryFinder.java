@@ -6,9 +6,10 @@ public class ArraySummaryFinder {
 
     public  int findMax(int ... arr) throws ArrayIsNullException{
 
-        if (arr == null){
+        if (arr == null) {
             throw new ArrayIsNullException("Array is null");
         }
+
         if (arr.length < 2) {
             return arr[0];
         }
@@ -27,7 +28,7 @@ public class ArraySummaryFinder {
 
     public int findAverage(int ... arr) throws ArrayIsNullException {
 
-        if (arr == null){
+        if (arr == null) {
             throw new ArrayIsNullException("Array is null");
         }
         if (arr.length < 2) {
@@ -39,14 +40,15 @@ public class ArraySummaryFinder {
         for (int i = 0; i < arr.length; i++) {
             average += arr[i];
         }
+
         average = average/arr.length;
         return average;
     }
 
 
-    public int findMin(int ... arr) throws ArrayIsNullException{
+    public int findMin(int ... arr) throws ArrayIsNullException {
 
-        if (arr == null){
+        if (arr == null) {
             throw new ArrayIsNullException("Array is null");
         }
         if (arr.length < 2) {
@@ -56,7 +58,7 @@ public class ArraySummaryFinder {
         int min = arr[0];
 
         for (int i = 0; i < arr.length; i++) {
-            if(arr[i] < min){
+            if(arr[i] < min) {
                 min = arr[i];
             }
         }
