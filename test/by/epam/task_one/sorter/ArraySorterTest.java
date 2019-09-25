@@ -8,6 +8,7 @@ import static org.testng.Assert.*;
 public class ArraySorterTest {
 
 
+
     @Test
     public void testInsertionSort() {
         int [] sortedArray = {-23, 0, 3, 4};

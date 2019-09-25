@@ -1,7 +1,8 @@
 package by.epam.task_one.sorter;
 
 public class ArraySorter {
-    private static int[] insertionSort(int ... array) {
+
+    public static int[] insertionSort(int ... array) {
 
         if (array == null) {
             return null;
@@ -27,7 +28,7 @@ public class ArraySorter {
     }
 
 
-    private static int[] selectionSort(int ... array) {
+    public static int[] selectionSort(int ... array) {
 
         if (array == null) {
             return null;
@@ -55,7 +56,7 @@ public class ArraySorter {
     }
 
 
-    private static int[] sortMerge(int ... array) {
+    public static int[] sortMerge(int ... array) {
         if (array == null) {
             return null;
         }

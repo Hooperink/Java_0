@@ -3,7 +3,6 @@ package by.epam.task_one.parser;
 import by.epam.task_one.array_utils.ConverterFromArrayListToArray;
 import by.epam.task_one.exception.ArrayIsNullException;
 import by.epam.task_one.validator.StringValidator;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -24,7 +23,7 @@ public class IntArrayGetterFromFile {
             FileReader fileReader = new FileReader(file);
             bufferedReader = new BufferedReader(fileReader);
             while ((temp = bufferedReader.readLine())!= null) {
-               if (StringValidator.isValid(temp)) {
+               if (StringValidator.validate(temp)) {
                    Stream<String> stream = Pattern.compile(" ").splitAsStream(temp);
                    stream.forEach(x -> valuesFromString.add(Double.valueOf(x)));
                }

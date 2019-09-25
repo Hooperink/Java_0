@@ -14,6 +14,6 @@ public class StringValidatorTest {
 
     @Test(dataProvider = "stringValidate")
     public void testIsValidString(String stringToValidate, boolean isValid) {
-        assertEquals(isValid,StringValidator.isValid(stringToValidate));
+        assertEquals(isValid,StringValidator.validate(stringToValidate));
     }
 }

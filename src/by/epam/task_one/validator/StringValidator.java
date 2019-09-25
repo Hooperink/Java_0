@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class StringValidator {
 
-    public static boolean isValid(String stringFromFile) {
+    public static boolean validate(String stringFromFile) {
 
         if (stringFromFile == null) {
             return false;
