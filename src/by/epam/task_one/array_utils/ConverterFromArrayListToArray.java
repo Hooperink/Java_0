@@ -10,7 +10,7 @@ public class ConverterFromArrayListToArray {
         if (arrayList == null) {
             throw new ArrayIsNullException("Array is empty");
         }
-        double [] array  = new double [arrayList.size()];
+        double[] array = new double [arrayList.size()];
         for (int i = 0; i < arrayList.size(); i++) {
             array[i] = arrayList.get(i);
         }

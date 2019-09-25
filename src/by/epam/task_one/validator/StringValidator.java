@@ -5,14 +5,14 @@ import java.util.regex.Pattern;
 
 public class StringValidator {
 
-    public static boolean isValidString(String stringFromFile) {
+    public static boolean isValid(String stringFromFile) {
 
         if (stringFromFile == null) {
             return false;
         }
 
-        Matcher matcher = null;
-        String []split = stringFromFile.split(" ");
+        Matcher matcher;
+        String[] split = stringFromFile.split(" ");
         Pattern pattern = Pattern.compile("(\\d+\\.\\d+)|(\\b\\d+\\b)");
 
         for (int i = 0; i < split.length; i++) {

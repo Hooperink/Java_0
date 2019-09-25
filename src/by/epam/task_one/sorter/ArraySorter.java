@@ -1,7 +1,7 @@
 package by.epam.task_one.sorter;
 
 public class ArraySorter {
-    public static int[] insertionSort(int ... array) {
+    private static int[] insertionSort(int ... array) {
 
         if (array == null) {
             return null;
@@ -27,7 +27,7 @@ public class ArraySorter {
     }
 
 
-    public static int[] selectionSort(int ... array) {
+    private static int[] selectionSort(int ... array) {
 
         if (array == null) {
             return null;
@@ -55,7 +55,7 @@ public class ArraySorter {
     }
 
 
-    public static int[] sortMerge(int ... array) {
+    private static int[] sortMerge(int ... array) {
         if (array == null) {
             return null;
         }
@@ -64,8 +64,8 @@ public class ArraySorter {
             return array;
         }
 
-        int leftArray[] = new int [array.length/2];
-        int rightArray[] = new int [array.length - array.length/2];
+        int[] leftArray = new int [array.length/2];
+        int[] rightArray = new int [array.length - array.length/2];
 
         System.arraycopy(array, 0, leftArray, 0, array.length/2);
         System.arraycopy(array, array.length/2, rightArray, 0, array.length - array.length/2);
@@ -77,9 +77,9 @@ public class ArraySorter {
     }
 
 
-    private static int[] merge(int left[], int right[]) {
+    private static int[] merge(int[] left, int[] right) {
 
-        int mergedArray[] = new int [left.length + right.length];
+        int[] mergedArray = new int [left.length + right.length];
         int leftPosition = 0;
         int rightPosition = 0;
 

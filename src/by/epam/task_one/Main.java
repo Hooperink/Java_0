@@ -7,7 +7,7 @@ public class Main {
 
         IntArrayGetterFromFile intArrayGetterFromFile = new IntArrayGetterFromFile();
 
-        double []array  = intArrayGetterFromFile.getIntFromFile("C:\\Users\\Вадим\\IdeaProjects\\java_0_epam\\resource\\numbers.txt");
+        double []array  = intArrayGetterFromFile.getIntFromFile("./resource/numbers.txt");
 
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + ", ");
