@@ -5,7 +5,7 @@ public enum  VacationType {
     EXCURSION("Excursion"),
     TREATMENT("Treatment"),
     REST("Rest"),
-    SHOPING("Shoping"),
+    SHOPPING("Shopping"),
     CAMPING("Camping"),
     CRUISE("Cruie");
 

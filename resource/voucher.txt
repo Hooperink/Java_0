@@ -1,0 +1,3 @@
+Vacation type: asdasd; Transport: qweqwe; Country: dss; Food type: qwe; Amount of days: 2;
+Country: Madagascar; Vacation type: Rest; Transport: Bus; Food type: AI; Amount of days: 13;
+asdasd
