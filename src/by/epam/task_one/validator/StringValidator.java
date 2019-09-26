@@ -13,7 +13,7 @@ public class StringValidator {
 
         Matcher matcher;
         String[] split = stringFromFile.split(" ");
-        Pattern pattern = Pattern.compile("(\\d+\\.\\d+)|(\\b\\d+\\b)");
+        Pattern pattern = Pattern.compile("([+-]?\\d+\\.\\d+)|([+-]?\\b\\d+\\b)");
 
         for (int i = 0; i < split.length; i++) {
             matcher = pattern.matcher(split[i].trim());

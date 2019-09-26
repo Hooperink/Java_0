@@ -1,0 +1,17 @@
+package by.epam.task_two.entity;
+
+public enum  VacationType {
+
+    EXCURSION("Excursion"),
+    TREATMENT("Treatment"),
+    REST("Rest"),
+    SHOPING("Shoping"),
+    CAMPING("Camping"),
+    CRUISE("Cruie");
+
+    public final String type;
+
+    VacationType(String type){
+        this.type = type;
+    }
+}
