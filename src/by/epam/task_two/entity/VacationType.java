@@ -7,7 +7,7 @@ public enum  VacationType {
     REST("Rest"),
     SHOPPING("Shopping"),
     CAMPING("Camping"),
-    CRUISE("Cruie");
+    CRUISE("Cruise");
 
     public final String type;
 

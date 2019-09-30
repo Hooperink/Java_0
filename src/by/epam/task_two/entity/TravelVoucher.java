@@ -1,14 +1,14 @@
 package by.epam.task_two.entity;
 
-public class TravelVoucher {
+ public class TravelVoucher {
 
-    private Transport transport;
+    private TransportType transport;
     private VacationType vacationType;
     private int amountOfDays;
     private String country;
     private FoodType foodType;
 
-    TravelVoucher(Transport transport,  VacationType vacationType, int amountOfDays, String country, FoodType foodType){
+    public TravelVoucher(TransportType transport, VacationType vacationType, int amountOfDays, String country, FoodType foodType){
         this.transport = transport;
         this.vacationType = vacationType;
         this.amountOfDays = amountOfDays;
@@ -24,7 +24,7 @@ public class TravelVoucher {
         return country;
     }
 
-    public Transport getTransport() {
+    public TransportType getTransport() {
         return transport;
     }
 
@@ -40,7 +40,7 @@ public class TravelVoucher {
         this.amountOfDays = amountOfDays;
     }
 
-    public void setTransport(Transport transport) {
+    public void setTransport(TransportType transport) {
         this.transport = transport;
     }
 
@@ -55,4 +55,10 @@ public class TravelVoucher {
     public void setFoodType(FoodType foodType) {
         this.foodType = foodType;
     }
-}
+
+     @Override
+     public String toString() {
+         return "Country: " + getCountry() + ", transport: " + getTransport() + ", food type: "
+                 + getFoodType() + ", amount of days: " + getAmountOfDays() + ", vacation type: " + getVacationType();
+     }
+ }

@@ -1,25 +1,17 @@
 package by.epam.task_two;
 
-import by.epam.task_two.validator.StringValidator;
+import by.epam.task_two.entity.TravelVoucher;
+import by.epam.task_two.file_handler.VouchersFromFile;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
-        File file = new File("./resource/voucher.txt");
-        StringValidator stringValidator = new StringValidator();
-        try {
-            FileReader fileReader = new FileReader(file);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-            String temp;
-            while ((temp = bufferedReader.readLine()) != null){
-                System.out.println(stringValidator.validate(temp));
-            }
-        } catch (Exception e){
-            e.printStackTrace();
+        VouchersFromFile vouchersFromFile = new VouchersFromFile();
+        List<TravelVoucher> vouchers = vouchersFromFile.getVouchers();
+        for (int i = 0; i < vouchers.size(); i++){
+            System.out.println(vouchers.get(i));
         }
     }
 }

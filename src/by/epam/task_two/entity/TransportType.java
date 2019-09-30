@@ -1,6 +1,6 @@
 package by.epam.task_two.entity;
 
-public enum Transport {
+public enum TransportType {
 
     TRAIN("Train"),
     BUS("Bus"),
@@ -9,7 +9,7 @@ public enum Transport {
 
     public final String transport;
 
-    Transport(String transport){
+    TransportType(String transport){
         this.transport = transport;
     }
 }
