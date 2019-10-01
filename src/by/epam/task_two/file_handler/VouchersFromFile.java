@@ -43,18 +43,13 @@ public class VouchersFromFile {
     }
 
     private TravelVoucher createVoucherFromString(String fileString){
-       TravelVoucher travelVoucher = null;
-        try {
-            travelVoucher = new TravelVoucher();
-            travelVoucher.setAmountOfDays(getAmountOfDays(fileString));
-            travelVoucher.setCountry(parseString(fileString, COUNTRY_PATTERN));
-            travelVoucher.setFoodType(getFoodType(fileString));
-            travelVoucher.setVacationType(getVacationType(fileString));
-            travelVoucher.setTransport(getTransportType(fileString));
-        } catch (Exception e){
-            e.printStackTrace();
-        }
-        return travelVoucher;
+       TravelVoucher travelVoucher = new TravelVoucher();
+       travelVoucher.setAmountOfDays(getAmountOfDays(fileString));
+       travelVoucher.setCountry(parseString(fileString, COUNTRY_PATTERN));
+       travelVoucher.setFoodType(getFoodType(fileString));
+       travelVoucher.setVacationType(getVacationType(fileString));
+       travelVoucher.setTransport(getTransportType(fileString));
+       return travelVoucher;
     }
 
 
