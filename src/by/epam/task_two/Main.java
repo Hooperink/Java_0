@@ -10,12 +10,12 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         VouchersFromFile vouchersFromFile = new VouchersFromFile();
         List<TravelVoucher> vouchers = vouchersFromFile.getVouchers();
-        for (int i = 0; i < vouchers.size(); i++){
-            System.out.println(vouchers.get(i));
+        for (TravelVoucher voucher : vouchers) {
+            System.out.println(voucher);
         }
 
         Comparator<TravelVoucher> travelVoucherComparator = new VoucherCountryComparator().thenComparing(new VoucherVacationComparator());

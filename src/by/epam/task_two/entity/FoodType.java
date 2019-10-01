@@ -1,22 +1,31 @@
 package by.epam.task_two.entity;
 
-import java.util.stream.Stream;
+import java.util.HashMap;
+import java.util.Map;
 
 public enum FoodType {
 
-    NOFOOD("No food"),
+    NO_FOOD("No food"),
     BREAKFAST("Breakfast"),
     BUFFET("Buffet"),
-    HALFBOARD("Half board"),
-    ALLINCLUSIVE("All inclusive");
+    HALF_BOARD("Half board"),
+    ALL_INCLUSIVE("All inclusive");
 
-    private final String foodType;
+    private String foodType;
+    private static final Map<String, FoodType> FOOD_TYPE_BY_NAME = new HashMap<>();
 
     FoodType(String foodType){
         this.foodType = foodType;
     }
 
-    public static Stream<FoodType> stream(){
-        return Stream.of(FoodType.values());
+
+    static {
+        for (FoodType caseStatuses : values()) {
+            FOOD_TYPE_BY_NAME.put(caseStatuses.foodType, caseStatuses);
+        }
+    }
+
+    public static FoodType fromString(String value) {
+        return FOOD_TYPE_BY_NAME.get(value);
     }
 }
