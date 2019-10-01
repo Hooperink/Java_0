@@ -24,13 +24,17 @@ public class VouchersFromFile {
     public List<TravelVoucher> getVouchers() {
         File file = new File("./resource/voucher.txt");
         StringValidator stringValidator = new StringValidator();
+        TravelVoucher voucher;
         try {
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String temp;
             while ((temp = bufferedReader.readLine()) != null) {
                 if (stringValidator.validate(temp)) {
-                    this.vouchers.add(createVoucherFromString(temp));
+                    voucher = createVoucherFromString(temp);
+                    if (voucher != null){
+                        vouchers.add(voucher);
+                    }
                 }
             }
         } catch (Exception e){
@@ -42,8 +46,12 @@ public class VouchersFromFile {
     private TravelVoucher createVoucherFromString(String fileString){
        TravelVoucher travelVoucher = null;
         try {
-            travelVoucher = new TravelVoucher(getTransportType(fileString), getVacationType(fileString),
-                    getAmountOfDays(fileString), getCountry(fileString), getFoodType(fileString));
+            travelVoucher = new TravelVoucher();
+            travelVoucher.setAmountOfDays(getAmountOfDays(fileString));
+            travelVoucher.setCountry(parseString(fileString, COUNTRY_PATTERN));
+            travelVoucher.setFoodType(getFoodType(fileString));
+            travelVoucher.setVacationType(getVacationType(fileString));
+            travelVoucher.setTransport(getTransportType(fileString));
         } catch (Exception e){
             e.printStackTrace();
         }
@@ -51,21 +59,15 @@ public class VouchersFromFile {
     }
 
 
-    private TransportType getTransportType(String fileString) throws NoSuchEnumValue {
-        Pattern patternTransport = Pattern.compile("(\\s+|\\b+)Transport:\\s*(\\w+)\\s*;");
-        Matcher matcherTransportType = patternTransport.matcher(fileString);
-        matcherTransportType.find();
-        String transportType = matcherTransportType.group(2).trim();
-        return Arrays.stream(TransportType.values()).filter(e -> e.name().equalsIgnoreCase(transportType)).findFirst().orElseThrow(() -> new NoSuchEnumValue("No such transport enum"));
+    private TransportType getTransportType(String fileString) {
+        String transportType = parseString(fileString, TRANSPORT_PATTERN);
+        return TransportType.fromString(transportType);
     }
 
 
-    private VacationType getVacationType(String fileString) throws NoSuchEnumValue {
-        Pattern patternVacationType = Pattern.compile("(\\s+|\\b+)Vacation type:\\s*(\\w+)\\s*;");
-        Matcher matcherVacationType = patternVacationType.matcher(fileString);
-        matcherVacationType.find();
-        String vacationType = matcherVacationType.group(2).trim();
-        return Arrays.stream(VacationType.values()).filter(e -> e.name().equalsIgnoreCase(vacationType)).findFirst().orElseThrow(() -> new NoSuchEnumValue("No such vacation enum"));
+    private VacationType getVacationType(String fileString){
+        String vacationType = parseString(fileString, VACATION_TYPE_PATTERN);
+        return VacationType.fromString(vacationType);
     }
 
 
@@ -89,10 +91,10 @@ public class VouchersFromFile {
         }
     }
 
-    private String getCountry (String fileString){
-        Pattern patternCountry = Pattern.compile("(\\s+|\\b+)Country:\\s*(\\w+)\\s*;");
-        Matcher matcherCountry = patternCountry.matcher(fileString);
-        matcherCountry.find();
-        return matcherCountry.group(2);
+    private String parseString(String fileString, String patternString) {
+        Pattern pattern = Pattern.compile(patternString);
+        Matcher matcherCountry = pattern.matcher(fileString);
+        return matcherCountry.find() ? matcherCountry.group(2) : "";
     }
+
 }

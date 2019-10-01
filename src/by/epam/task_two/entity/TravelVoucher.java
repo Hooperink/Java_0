@@ -8,6 +8,8 @@ package by.epam.task_two.entity;
     private String country;
     private FoodType foodType;
 
+    public  TravelVoucher(){}
+
     public TravelVoucher(TransportType transport, VacationType vacationType, int amountOfDays, String country, FoodType foodType){
         this.transport = transport;
         this.vacationType = vacationType;

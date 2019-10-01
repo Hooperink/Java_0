@@ -16,10 +16,6 @@ public enum FoodType {
         this.foodType = foodType;
     }
 
-    public String getFoodType() {
-        return foodType;
-    }
-
     public static Stream<FoodType> stream(){
         return Stream.of(FoodType.values());
     }
