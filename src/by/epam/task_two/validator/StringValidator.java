@@ -3,13 +3,10 @@ package by.epam.task_two.validator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static by.epam.task_two.regular_expressions.PatternsRegEx.*;
+
 public class StringValidator {
 
-    public static final String VACATION_TYPE_PATTERN = "(\\s+|\\b+)Vacation type:\\s*(\\w+)\\s*;";
-    public static final String TRANSPORT_PATTERN = "(\\s+|\\b+)Transport:\\s*(\\w+)\\s*;";
-    public static final String COUNTRY_PATTERN = "(\\s+|\\b+)Country:\\s*(\\w+)\\s*;";
-    public static final String FOOD_TYPE_PATTERN = "(\\s+|\\b+)Food type:\\s*(\\w+\\s*\\w*);";
-    public static final String AMOUNT_OF_DAYS_PATTERN = "(\\s+|\\b+)Amount of days:\\s*(\\d+)\\s*;";
 
     public boolean validate(String toValidate) {
 

@@ -1,6 +1,7 @@
 package by.epam.task_two.entity;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public enum  VacationType {
 
@@ -8,11 +9,10 @@ public enum  VacationType {
     TREATMENT("Treatment"),
     REST("Rest"),
     SHOPPING("Shopping"),
-    CAMPING("Camping"),
     CRUISE("Cruise");
 
     public final String type;
-    private final static HashMap<String, VacationType> VACATIONS_TYPE_BY_NAME = new HashMap<>();
+    private final static Map<String, VacationType> VACATIONS_TYPE_BY_NAME = new HashMap<>();
 
     VacationType(String type){
         this.type = type;

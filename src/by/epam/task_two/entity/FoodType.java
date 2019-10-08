@@ -18,7 +18,6 @@ public enum FoodType {
         this.foodType = foodType;
     }
 
-
     static {
         for (FoodType caseStatuses : values()) {
             FOOD_TYPE_BY_NAME.put(caseStatuses.foodType, caseStatuses);

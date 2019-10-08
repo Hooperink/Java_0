@@ -1,12 +1,9 @@
 package by.epam.task_two.file_handler;
 
-import by.epam.task_two.entity.FoodType;
-import by.epam.task_two.entity.TransportType;
-import by.epam.task_two.entity.TravelVoucher;
-import by.epam.task_two.entity.VacationType;
+import by.epam.task_two.entity.*;
+import by.epam.task_two.pattern.VoucherFactory;
 import by.epam.task_two.validator.StringValidator;
 
-import javax.management.BadAttributeValueExpException;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -15,19 +12,18 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static by.epam.task_two.validator.StringValidator.*;
+import static by.epam.task_two.regular_expressions.PatternsRegEx.*;
+
 
 public class VouchersFromFile {
 
-    private List<TravelVoucher> vouchers = new ArrayList<>();
+    private List<Voucher> vouchers = new ArrayList<>();
 
-    public List<TravelVoucher> getVouchers() {
+    public List<Voucher> getVouchers() {
         File file = new File("./resource/voucher.txt");
         StringValidator stringValidator = new StringValidator();
-        TravelVoucher voucher;
-        try {
-            FileReader fileReader = new FileReader(file);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
+        Voucher voucher;
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file))){
             String temp;
             while ((temp = bufferedReader.readLine()) != null) {
                 if (stringValidator.validate(temp)) {
@@ -43,14 +39,19 @@ public class VouchersFromFile {
         return vouchers;
     }
 
-    private TravelVoucher createVoucherFromString(String fileString){
-       TravelVoucher travelVoucher = new TravelVoucher();
-       travelVoucher.setAmountOfDays(getAmountOfDays(fileString));
-       travelVoucher.setCountry(parseString(fileString, COUNTRY_PATTERN));
-       travelVoucher.setFoodType(getFoodType(fileString));
-       travelVoucher.setVacationType(getVacationType(fileString));
-       travelVoucher.setTransport(getTransportType(fileString));
-       return travelVoucher;
+    private Voucher createVoucherFromString(String fileString){
+       VoucherFactory voucherFactory = new VoucherFactory();
+       Voucher voucher = voucherFactory.createVoucher(getVacationType(fileString).toString());
+       if (voucher == null){
+           return null;
+       }
+       voucher.setAmountOfDays(getAmountOfDays(fileString));
+       voucher.setCountry(parseString(fileString, COUNTRY_PATTERN));
+       voucher.setFoodType(getFoodType(fileString));
+       voucher.setTransport(getTransportType(fileString));
+       voucher.setVacationType(getVacationType(fileString));
+       setFieldByType(voucher, fileString);
+       return voucher;
     }
 
 
@@ -79,6 +80,31 @@ public class VouchersFromFile {
         Pattern pattern = Pattern.compile(patternString);
         Matcher matcherCountry = pattern.matcher(fileString);
         return matcherCountry.find() ? matcherCountry.group(2) : "";
+    }
+
+    private void setFieldByType (Voucher voucher, String fileString){
+
+        if (voucher.getVacationType().type.equalsIgnoreCase("CRUISE")){
+            CruiseVoucher cruiseVoucher = (CruiseVoucher)voucher;
+            cruiseVoucher.setShipName(parseString(fileString, SHIP_NAME_PATTERN));
+
+        } else if (voucher.getVacationType().type.equalsIgnoreCase("EXCURSION")){
+            ExcursionVoucher excursionVoucher = (ExcursionVoucher)voucher;
+            excursionVoucher.setGuide(parseString(fileString, GUIDE_NAME_PATTERN));
+
+        } else if (voucher.getVacationType().type.equalsIgnoreCase("TREATMENT")){
+            TreatmentVoucher treatmentVoucher = (TreatmentVoucher)voucher;
+            treatmentVoucher.setMedicalInstitute(parseString(fileString, MEDICAL_INSTITUTION_NAME_PATTERN));
+
+        } else if (voucher.getVacationType().type.equalsIgnoreCase("SHOPPING")){
+            ShoppingVoucher shoppingVoucher = (ShoppingVoucher)voucher;
+            String[] shoppingCenters = parseString(fileString, SHOPPING_CENTERS_NAME_PATTERN).split(",");
+            shoppingVoucher.setShoppingCenters(shoppingCenters);
+
+        } else if (voucher.getVacationType().type.equalsIgnoreCase("REST")) {
+            RestVoucher restVoucher = (RestVoucher)voucher;
+            restVoucher.setHotel(parseString(fileString, HOTEL_NAME_PATTERN));
+        }
     }
 
 }

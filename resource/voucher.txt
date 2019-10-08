@@ -1,4 +1,1 @@
-Vacation type: Treatment; Transport: Train; Country: Egypt; Food type: Half board; Amount of days: 2;
-Vacation type: Excursion; Transport: Train; Country: Egypt; Food type: Half board; Amount of days: 2;
-Vacation type: Camping; Transport: Bus; Country: BY; Food type: Buffet; Amount of days: 13;
-Vacation type: Excursion; Transport: Airplane; Country: Turkey; Food type: All inclusive; Amount of days: 14;
+Vacation type: Excursion; Transport: Train; Country: Egypt; Food type: Half board; Amount of days: 2; Guide: me;

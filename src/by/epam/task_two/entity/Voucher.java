@@ -1,6 +1,6 @@
 package by.epam.task_two.entity;
 
- public class TravelVoucher {
+ public class Voucher {
 
     private TransportType transport;
     private VacationType vacationType;
@@ -8,9 +8,9 @@ package by.epam.task_two.entity;
     private String country;
     private FoodType foodType;
 
-    public  TravelVoucher(){}
+    public Voucher(){}
 
-    public TravelVoucher(TransportType transport, VacationType vacationType, int amountOfDays, String country, FoodType foodType){
+    public Voucher(TransportType transport, VacationType vacationType, int amountOfDays, String country, FoodType foodType){
         this.transport = transport;
         this.vacationType = vacationType;
         this.amountOfDays = amountOfDays;
@@ -60,7 +60,7 @@ package by.epam.task_two.entity;
 
      @Override
      public String toString() {
-         return "Country: " + getCountry() + ", transport: " + getTransport() + ", food type: "
-                 + getFoodType() + ", amount of days: " + getAmountOfDays() + ", vacation type: " + getVacationType();
+         return "Country: " + country + ", transport: " + transport + ", food type: "
+                 + foodType + ", amount of days: " + amountOfDays + ", vacation type: " + vacationType;
      }
  }
