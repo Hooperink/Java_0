@@ -1,5 +1,9 @@
 package by.epam.task_two.entity;
 
+import by.epam.task_two.parser.ValueParser;
+
+import static by.epam.task_two.regular_expressions.PatternsRegEx.MEDICAL_INSTITUTION_NAME_PATTERN;
+
 public class TreatmentVoucher extends Voucher {
     private String medicalInstitute;
 
@@ -9,6 +13,11 @@ public class TreatmentVoucher extends Voucher {
 
     public String getMedicalInstitute() {
         return medicalInstitute;
+    }
+
+    @Override
+    public void setAdditionalValue(ValueParser valueParser, String stringFromFile) {
+        this.setMedicalInstitute(valueParser.parseString(stringFromFile, MEDICAL_INSTITUTION_NAME_PATTERN));
     }
 
     @Override

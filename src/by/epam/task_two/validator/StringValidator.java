@@ -3,7 +3,11 @@ package by.epam.task_two.validator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static by.epam.task_two.regular_expressions.PatternsRegEx.*;
+import static by.epam.task_two.regular_expressions.PatternsRegEx.AMOUNT_OF_DAYS_PATTERN;
+import static by.epam.task_two.regular_expressions.PatternsRegEx.FOOD_TYPE_PATTERN;
+import static by.epam.task_two.regular_expressions.PatternsRegEx.VACATION_TYPE_PATTERN;
+import static by.epam.task_two.regular_expressions.PatternsRegEx.TRANSPORT_PATTERN;
+import static by.epam.task_two.regular_expressions.PatternsRegEx.COUNTRY_PATTERN;
 
 public class StringValidator {
 

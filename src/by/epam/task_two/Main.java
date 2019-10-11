@@ -12,6 +12,5 @@ public class Main {
         for (Voucher voucher : vouchers) {
             System.out.println(voucher);
         }
-
     }
 }

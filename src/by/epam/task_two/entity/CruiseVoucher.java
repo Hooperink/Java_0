@@ -1,5 +1,8 @@
 package by.epam.task_two.entity;
 
+import by.epam.task_two.parser.ValueParser;
+import static by.epam.task_two.regular_expressions.PatternsRegEx.SHIP_NAME_PATTERN;
+
 public class CruiseVoucher extends Voucher{
 
     private String shipName;
@@ -10,6 +13,11 @@ public class CruiseVoucher extends Voucher{
 
     public String getShipName() {
         return shipName;
+    }
+
+    @Override
+    public void setAdditionalValue(ValueParser valueParser, String stringFromFile) {
+        this.setShipName(valueParser.parseString(stringFromFile,SHIP_NAME_PATTERN));
     }
 
     @Override

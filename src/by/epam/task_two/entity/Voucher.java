@@ -1,6 +1,8 @@
 package by.epam.task_two.entity;
 
- public class Voucher {
+import by.epam.task_two.parser.ValueParser;
+
+public abstract class Voucher {
 
     private TransportType transport;
     private VacationType vacationType;
@@ -8,7 +10,9 @@ package by.epam.task_two.entity;
     private String country;
     private FoodType foodType;
 
-    public Voucher(){}
+    public Voucher(){
+
+    }
 
     public Voucher(TransportType transport, VacationType vacationType, int amountOfDays, String country, FoodType foodType){
         this.transport = transport;
@@ -57,6 +61,8 @@ package by.epam.task_two.entity;
     public void setFoodType(FoodType foodType) {
         this.foodType = foodType;
     }
+
+    public abstract void setAdditionalValue(ValueParser valueParser, String value);
 
      @Override
      public String toString() {

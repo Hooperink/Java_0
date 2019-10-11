@@ -5,11 +5,42 @@ import java.util.Map;
 
 public enum  VacationType {
 
-    EXCURSION("Excursion"),
-    TREATMENT("Treatment"),
-    REST("Rest"),
-    SHOPPING("Shopping"),
-    CRUISE("Cruise");
+    EXCURSION("Excursion"){
+        @Override
+        public Voucher createVoucher() {
+            return new ExcursionVoucher();
+        }
+    },
+
+    TREATMENT("Treatment"){
+        @Override
+        public Voucher createVoucher() {
+            return new TreatmentVoucher();
+        }
+    },
+
+    REST("Rest"){
+        @Override
+        public Voucher createVoucher() {
+            return new RestVoucher();
+        }
+    },
+
+    SHOPPING("Shopping") {
+        @Override
+        public Voucher createVoucher() {
+            return new ShoppingVoucher();
+        }
+    },
+
+    CRUISE("Cruise") {
+        @Override
+        public Voucher createVoucher() {
+            return new CruiseVoucher();
+        }
+    };
+
+    public abstract Voucher createVoucher();
 
     public final String type;
     private final static Map<String, VacationType> VACATIONS_TYPE_BY_NAME = new HashMap<>();
@@ -27,4 +58,5 @@ public enum  VacationType {
     public static VacationType fromString(String value){
         return VACATIONS_TYPE_BY_NAME.get(value);
     }
+
 }
